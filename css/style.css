@@ -44,12 +44,8 @@ h1 span {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-section:last-child {
-    border-bottom: none;
-}
 
-
-/* Main Info */
+/* HTML Info */
 
 img.avatar {
     width: 200px;
@@ -66,82 +62,8 @@ img.avatar {
     margin: 10px 0 10px 0;
 }
 
-.link-item {
-    display: flex;
-    align-items: center;
-    flex: 1;
-}
-
-
-/* Experience */
-
-.job {
-    border-bottom: 1px solid lightgrey;
-}
-
-.job:last-child {
-    border-bottom: none;
-}
-
-.job-title-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-
-.job-company {
-    font-weight: bold;
-    line-height: 1.2;
-}
-
-.job .date {
-    font-size: 16px;
-}
-
-.job .description {
-    margin-top: 5px;
-}
-
-.job .description p {
-    margin: 0;
-}
-
-
-/* Skills */
-
-.skills-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 5px;
-    margin-bottom: 10px;
-}
-
-
-/* Interests */
-
-.interests-container {
-    display: flex;
-    justify-content: space-between;
-}
-
 @media only screen and (max-width: 768px) {
-    section {
-        grid-template-columns: 1fr;
-    }
-    .links,
-    .job-title-container {
+    .links {
         flex-direction: column;
-    }
-    .skills-container {
-        grid-template-columns: 1fr;
-    }
-    .interests-container {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-    .interests-container span {
-        margin-right: 32px;
-        margin-bottom: 16px;
     }
 }
