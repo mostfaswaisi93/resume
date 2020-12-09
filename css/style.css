@@ -29,10 +29,6 @@ img {
 
 a {
     color: #323232;
-    text-decoration: none;
-}
-
-a:hover {
     text-decoration: underline;
 }
 
@@ -48,7 +44,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-gap: 20px;
-    padding: 24px 0;
+    padding: 12px 0;
     border-bottom: 1px solid lightgrey;
 }
 
@@ -69,19 +65,23 @@ img.avatar {
 }
 
 .my-name {
-    font-size: 48px;
+    font-size: 42px;
     line-height: 1;
 }
 
+.my-name i {
+    font-size: 20px;
+}
+
 .my-title {
-    font-size: 24px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 500;
     color: rgb(8, 130, 238);
 }
 
 .links {
     display: flex;
-    margin: 10px 0 20px 0;
+    margin: 10px 0 10px 0;
 }
 
 .link-item {
@@ -90,16 +90,10 @@ img.avatar {
     flex: 1;
 }
 
-.link-item svg {
-    margin-right: 6px;
-}
-
 
 /* Experience */
 
 .job {
-    padding-bottom: 24px;
-    margin-bottom: 24px;
     border-bottom: 1px solid lightgrey;
 }
 
@@ -110,7 +104,7 @@ img.avatar {
 .job-title-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 18px;
 }
 
@@ -119,19 +113,18 @@ img.avatar {
     line-height: 1.2;
 }
 
+.job .date {
+    font-size: 16px;
+}
+
 
 /* Skills */
 
 .skills-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    margin-bottom: 24px;
-}
-
-.skills-container ul {
-    margin-left: 20px;
-    list-style-type: disc;
+    grid-gap: 5px;
+    margin-bottom: 10px;
 }
 
 
